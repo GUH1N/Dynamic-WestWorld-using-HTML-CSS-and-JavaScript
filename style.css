@@ -1,0 +1,269 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    background-color: #9BA4B5;;
+}
+
+.Header
+{
+    display:flex;
+    background-color: #9BA4B5;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.head_list
+{
+    padding: 15px;
+   
+}
+
+.li
+{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family:'garet', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #212A3E;
+}
+a:hover
+{
+    color: #F1F6F9;
+}
+
+.access
+{
+    border: 2px solid #212A3E;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.access:hover
+{
+    background-color: #212A3E;
+}
+
+.image
+{
+    background-image: url(./image/1416dc97-0042-429b-a1eb-b93e873c607b.png);
+    background-size: cover;
+    margin: 0px 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+h1,h4
+{
+    font-family: 'garet', sans-serif;;
+    text-align: center;
+    color: #F1F6F9;
+}
+h1.ww
+{
+    font-size: 80px;
+}
+
+h2
+{
+    font-family: 'garet', sans-serif;;
+    text-align: center;
+    color: #F1F6F9;
+}
+
+.about
+{
+    background-color: #212A3E;
+    padding: 20px;
+    margin: 0px 20px;
+}
+
+p
+{
+    font-family: 'garet', sans-serif;;
+    text-align: center;
+    color: #F1F6F9;
+    font-size: 20px;
+
+}
+
+.button
+{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+}
+
+.button_2
+{
+    background-color: #F1F6F9;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'garet', sans-serif;;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #212A3E;  
+}
+
+.button:hover
+{
+    background-color: #212A3E;
+    color: #F1F6F9;
+}
+.footer
+{
+    background-color: #F1F6F9;
+    color: #212A3E;
+    padding: 20px;
+    margin: 0px 20px;
+}
+.button_1
+{
+    background-color: #212A3E;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'garet', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #F1F6F9;  
+}
+
+.card-title
+{
+    font-family: 'garet', sans-serif;
+    font-size: 30px;
+    color: #212A3E;
+    text-align: center;
+}
+
+.text_sider
+{
+    background-color: #9ba4b56e;
+    font-family: 'garet', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #212A3E;
+    text-align: center;   
+}
+
+#carouselExampleCaptions
+{
+    margin: 0px 20px;
+}
+
+.carousel-inner,.carousel-item
+{
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card
+{
+    margin: 20px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.card-text
+{
+    font-family: 'garet', sans-serif;
+    font-size: 20px;
+    color: #212A3E;
+    text-align: left;
+    overflow:scroll;
+}
+
+@media screen and (max-width : 768px)
+{
+    .li
+    {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .head_list
+    {
+        padding: 10px 5px;
+    }
+    .logo
+    {
+        width: 100px;
+    }
+    .access
+    {
+        top: 10px;
+        padding: 5px;
+    }
+    
+
+}
+
+@media screen and (max-width : 500px)
+{
+    .li
+    {
+        padding: 2px;
+        font-size: 9.5px;
+    }
+    .head_list
+    {
+        padding: 5px;
+    }
+    .logo
+    {
+        width: 60px;
+    }
+    .access
+    {
+        top: 10px;
+        padding: 2px;
+    }
+    .access_t
+    {
+        font-size: 15px;
+    }
+    h1.ww
+    {
+        font-size: 40px;
+    }
+    .iframe
+    {
+        width: 90%;
+        height: 400px;
+        margin-left: 5%;
+    }
+    h1.about_ww
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width : 1400px)
+{
+    .image
+    {
+        height: 100vh;
+    }
+    h2
+    {
+        text-align: center;
+        font-size: 80px;
+        padding: 450px 0px 0px 0px;
+    }
+    
+}

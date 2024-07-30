@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WESTWORLD CONTACT PAGE</title>
+    <link rel="icon" href="./image/logo.png">
+    <link rel="stylesheet" href="./contact.css">
+    <link href="https://fonts.cdnfonts.com/css/garet" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/garet');
+</style>
+</head>
+<body>
+    <div class="Header">
+        <div>
+        <a href="index.html"><img class="logo" title="WestWorld" src="./image/logo.png" alt="Image" width="150"></a>
+        </div>
+        <div class="head_list"><ul style="padding-left: 10px;">
+            <li class="li"><a href="./About_us.html">ABOUT</a></li>
+            <li class="li"><a href="./product.html">EXPERIENCE</a></li>
+            <li class="li"><a href="./product.html">EXPLORE</a></li>
+            <li class="li"><a href="./index.html">STAY</a></li>
+        </ul></div>
+        <div class="access">
+            <a class="access_t" href="./contact.html">ACCESS</a>
+        </div>
+    </div>
+    <div class="contact">
+        <table class="table">
+            <form class="form" id="myForm">
+                <tr class="row">
+                    <td class="row_0">
+                <label for="name">First Name</label>
+                    </td>
+                    <td class="row_0">
+                <input id="fname" type="text" placeholder="Enter Name" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_1">
+                <label for="name">Last Name</label>
+                    </td>
+                    <td class="row_1">
+                <input id="lname" type="text" placeholder="Enter Name" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_2">
+                <label for="reg_no">Contact Number</label>
+                    </td>
+                    <td class="row_2">
+                <input id="number" type="text" placeholder="Enter Number" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_7">
+                <label for="name">E_Mail ID</label>
+                    </td>
+                    <td class="row_7">
+                <input id="email" type="text" placeholder="Enter E_Mail ID" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_3">
+                <label for="Dept">Select Sever</label>
+                    </td>
+                    <td class="row_3">
+                <select>
+                    <option value="us">US</option>
+                    <option value="ind">IND</option>
+                    <option value="br">BR</option>
+                    <option value="KR">KR</option>
+                </select>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_4">
+                    <label for="ep">Enter Password</label>
+                    </td>
+                    <td class="row_4">
+                    <input id="ep" type="password" placeholder="Enter Password" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="row_5">
+                    <label for="cp">Confirm Password</label>
+                    </td>
+                    <td class="row_5">
+                    <input id="cp" type="password" placeholder="Confirm Password" required>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <button type="submit" onclick="validateForm()">Submit</button>
+                    </td>
+                    <td>
+                        <button>Cancel</button>
+                    </td>
+                </tr>
+                
+            </form>
+            </table>
+    </div>
+    <div class="footer">
+        <h1 class="footer">BY GUHAA PRIYAN</h1>
+        <div class="button">
+        <a href="./contact.html"><button class="button_1">CONTACT US</button></a>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const Fname = document.getElementById('fname').value;
+            const Lname = document.getElementById('lname').value;
+            const email = document.getElementById('email').value;
+            const number = document.getElementById('number').value;
+            const pass = document.getElementById('ep').value;
+            const conf_pass = document.getElementById('cp').value;
+            const reg_mail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+            const reg_num = /^[0-9]{10}$/;
+            
+            if (Fname == '' || Lname == '' || email == '' || number == '' || pass == '' || conf_pass == '') {
+                alert('Please fill all the fields');
+            }
+
+            else if(!reg_mail.test(email)) {
+                alert('Invalid Email');
+            }
+
+            else if (!reg_num.test(number)) {
+                alert('Invalid Number');
+            }
+
+            else if( pass != conf_pass) {
+                alert('Password Mismatch');
+            }
+
+            else {
+                alert('Form Submitted Successfully');
+            }
+        }
+    </script>
+
+</body>
+</html>

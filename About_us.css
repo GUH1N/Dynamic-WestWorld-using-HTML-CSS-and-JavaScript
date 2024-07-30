@@ -1,0 +1,177 @@
+*
+{
+    margin: 0;
+}
+
+body
+{
+    background-color: #9BA4B5;;
+}
+
+.Header
+{
+    display:flex;
+    background-color: #9BA4B5;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.head_list
+{
+    padding: 15px;
+   
+}
+
+.li
+{
+    display: inline;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family:'garet', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #212A3E;
+}
+a:hover
+{
+    color: #F1F6F9;
+}
+
+.access
+{
+    border: 2px solid #212A3E;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-left: 0px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.access:hover
+{
+    background-color: #212A3E;
+}
+
+.about
+{
+    background-color: #F1F6F9;
+    padding: 20px;
+    margin: 0px 20px;
+    font-family: sans-serif;
+    color: #212A3E;
+    border-radius: 10px 10px 0px 0px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.footer
+{
+    color: #F1F6F9;
+    background-color: #212A3E;
+    padding: 20px;
+    margin: 0px 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.button
+{
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+}
+
+button_1
+{
+    background-color: #212A3E;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'garet', sans-serif;;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    color: #F1F6F9;  
+}
+
+.video
+{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width : 768px)
+{
+    .li
+    {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .head_list
+    {
+        padding: 10px 5px;
+    }
+    .logo
+    {
+        width: 100px;
+    }
+    .access
+    {
+        top: 10px;
+        padding: 5px;
+    }
+    .about_ww
+    {
+        padding: 10px;
+        font-size: 15px;
+    
+    }
+
+}
+
+@media screen and (max-width : 500px)
+{
+    .li
+    {
+        padding: 2px;
+        font-size: 9.5px;
+    }
+    .head_list
+    {
+        padding: 5px;
+    }
+    .logo
+    {
+        width: 60px;
+    }
+    .access
+    {
+        top: 10px;
+        padding: 2px;
+    }
+    .access_t
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width : 1400px)
+{
+    .iframe
+    {
+        width: 80%;
+        height: 500px;
+        margin-left: 10%;
+    }
+}
